@@ -12,6 +12,11 @@ The event handler functions always get passed 1 argument that always contains al
 
 ### Example
 
+```html
+<button class='counter-button'>Increment counter</button>
+<div class='counter-display'>0</div>
+```
+
 ```js
 import { components } from '@smarterlabs/retro-js'
 
