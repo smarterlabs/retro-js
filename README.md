@@ -85,14 +85,16 @@ We need a button to create and toggle a `nav-open` variable `true`/`false`:
 ```html
 <button data-click='!nav-open'>Toggle Navigation</button>
 
-The default value of booleans will be false. If we want to set the default value to true, we can do this 2 ways:
+The default value of booleans will be false.
+If we want to set the default value to true, we can do this 2 ways:
 
 <button data-click='!nav-open' data-set='nav-open:true'>Open Navigation</button>
 <button data-click='!nav-open:true'>Open Navigation</button>
 ```
 
 ```html
-If state variable navOpen is truthy, then set a class name of "navOpen", otherwise don't set a class name.
+If state variable navOpen is truthy, then set a class name of "navOpen",
+otherwise don't set a class name.
 
 <nav data-class='nav-open ? "nav-open" : ""'>Navigation</nav>
 
@@ -101,10 +103,17 @@ Or shorthand if the variable name and class name you're setting are the same:
 <nav data-class='nav-open'>Navigation</nav>
 ```
 
-If you'd like to have a more clear seperation between class names and state variable names, a more robust app might look something like this:
+If you'd like to have a more clear seperation between class names and
+state variable names, a more robust app might look something like this:
 
 ```html
-<nav class='nav-closed' data-class='nav.open ? "nav-open" : "nav-closed"'>Navigation</nav>
+<nav
+   class='nav-closed'
+   data-class='nav.open ? "nav-open" : "nav-closed"'
+>
+   Navigation
+</nav>
+
 <button data-click='!nav.open'>Toggle Navigation</button>
 
 <style>
@@ -117,7 +126,7 @@ If you'd like to have a more clear seperation between class names and state vari
 </style>
 ```
 
-For use cases more advanced that this, we would recommend the JavaScript API.
+For use cases more advanced than this, we would recommend the JavaScript API.
 
 ## Why?
 
