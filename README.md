@@ -18,9 +18,9 @@ The event handler functions always get passed 1 argument that always contains al
 ```
 
 ```js
-import { components } from '@smarterlabs/retro-js'
+import { createComponents } from '@smarterlabs/retro-js'
 
-components({
+createComponents({
    '.counter-button': {
       // Increment counter when button is clicked
       onClick: ({ state, setState }) => {
