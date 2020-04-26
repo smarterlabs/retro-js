@@ -90,7 +90,7 @@ We need a button to create and toggle a `nav-open` variable `true`/`false`:
 The default value of booleans will be false.
 If we want to set the default value to true, we can do this 2 ways:
 
-<button data-click='!nav-open' data-set='nav-open:true'>Open Navigation</button>
+<button data-click='!nav-open' data-set='nav-open:true:boolean'>Open Navigation</button>
 <button data-click='!nav-open:true'>Open Navigation</button>
 ```
 
