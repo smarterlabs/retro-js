@@ -1,5 +1,7 @@
 # Retro JS
 
+**Project in Alpha**
+
 A JS/HTML library for small JS/HTML components. Retro uses HTML data attributes to do state changes with JS under the hood.
 
 For smaller apps and interactions, you can just add a couple properties in HTML and not have to write a single line of JS. For medium sized apps and interctions, the JS API allows you to write clean and easy to understand components.
